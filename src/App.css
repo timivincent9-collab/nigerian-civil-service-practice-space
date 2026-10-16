@@ -1,0 +1,418 @@
+#root {
+  width: 100%;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* HEADER */
+
+.header {
+  background: #0b3d91;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background: #d4af37;
+  color: #0b3d91;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.logo span {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.navigation {
+  display: flex;
+  gap: 28px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.navigation a:hover {
+  color: #d4af37;
+}
+
+/* HERO */
+
+.hero {
+  background: linear-gradient(135deg, #0b3d91, #1769c2);
+  color: white;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 90px 24px 100px;
+}
+
+.hero-label,
+.section-label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin: 0 0 14px;
+  color: #d4af37;
+}
+
+.hero h2 {
+  font-size: clamp(38px, 6vw, 68px);
+  line-height: 1.08;
+  margin: 0 0 24px;
+  max-width: 800px;
+}
+
+.hero-description {
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.92;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.primary-button,
+.secondary-button {
+  display: inline-block;
+  padding: 13px 22px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.primary-button {
+  background: #d4af37;
+  color: #102d5f;
+}
+
+.secondary-button {
+  border: 1px solid white;
+  color: white;
+}
+
+/* PRACTICE SECTION */
+
+.practice-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading h2,
+.mock-exam h2,
+.about-content h2 {
+  margin: 0 0 12px;
+  color: #102d5f;
+  font-size: 34px;
+}
+
+.section-heading > p:last-child {
+  color: #64748b;
+}
+
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.practice-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 26px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+}
+
+.card-number {
+  color: #0b3d91;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.practice-card h3 {
+  color: #102d5f;
+  margin: 12px 0 10px;
+}
+
+.practice-card p {
+  color: #64748b;
+  line-height: 1.6;
+  min-height: 78px;
+}
+
+.practice-card button,
+.mock-button {
+  border: none;
+  border-radius: 6px;
+  padding: 11px 16px;
+  background: #0b3d91;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.practice-card button:hover,
+.mock-button:hover {
+  background: #1769c2;
+}
+
+/* MOCK EXAM */
+
+.mock-exam {
+  margin-top: 45px;
+  padding: 35px;
+  border-radius: 12px;
+  background: #102d5f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.mock-exam h2 {
+  color: white;
+}
+
+.mock-exam .section-label {
+  margin-bottom: 8px;
+}
+
+.mock-exam p {
+  color: #dbeafe;
+  margin-bottom: 0;
+}
+
+.mock-button {
+  background: #d4af37;
+  color: #102d5f;
+  white-space: nowrap;
+}
+
+/* ABOUT */
+
+.about-section {
+  background: #eef4fb;
+}
+
+.about-content {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.about-content p:not(.section-label):not(.disclaimer) {
+  color: #475569;
+  line-height: 1.8;
+}
+
+.disclaimer {
+  margin-top: 30px;
+  padding: 18px;
+  border-radius: 8px;
+  background: #fff;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #081f49;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 13px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+  .navigation {
+    display: none;
+  }
+
+  .hero-content {
+    padding: 65px 20px 75px;
+  }
+
+  .hero h2 {
+    font-size: 42px;
+  }
+
+  .practice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mock-exam {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content {
+    padding: 14px 16px;
+  }
+
+  .logo h1 {
+    font-size: 14px;
+  }
+
+  .logo span {
+    font-size: 11px;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .primary-button,
+  .secondary-button {
+    text-align: center;
+  }
+}
+
+/* ANSWER OPTION STATES */
+
+.answer-option {
+  width: 100%;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1f2937;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.answer-option:hover {
+  border-color: #2563eb;
+  background: #f8fafc;
+}
+
+.answer-option.selected {
+  border-color: #2563eb;
+  background: #eff6ff;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+  font-weight: 600;
+}
+
+/* QUESTION NAVIGATOR */
+
+.question-navigator {
+  margin-bottom: 24px;
+}
+
+.question-navigator p {
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+.question-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.question-numbers button {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1f2937;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.question-numbers button:hover {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+/* CURRENT QUESTION */
+
+.question-numbers button.current {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* ANSWERED QUESTION */
+
+.question-numbers button.answered {
+  border-color: #16a34a;
+  background: #dcfce7;
+  color: #166534;
+}
+
+/* CURRENT + ANSWERED QUESTION */
+
+.question-numbers button.current.answered {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+} 
